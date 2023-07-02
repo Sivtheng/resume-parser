@@ -1,11 +1,15 @@
-#### Context
+# Info
+
+## Context
+
 A collection of Resume Examples taken from livecareer.com for categorizing a given resume into any of the labels defined in the dataset.
 
-#### Content
+## Content
+
 Contains 2400+ Resumes in string as well as PDF format.
 PDF stored in the data folder differentiated into their respective labels as folders with each resume residing inside the folder in pdf form with filename as the id defined in the csv.
 
-#### Inside the CSV:
+## Inside the CSV:
 
 ID: Unique identifier and file name for the respective pdf.
 Resume_str : Contains the resume text only in string format.
