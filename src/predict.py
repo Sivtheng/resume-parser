@@ -33,7 +33,6 @@ def parse_resume(resume_text):
     
     return predicted_category
 
-# Example usage
 if __name__ == '__main__':
     resume_text = "Emily Brown\n\nObjective: Passionate graphic designer with expertise in branding and visual communication. Seeking a creative position to apply my skills in designing impactful visual solutions and contributing to brand identity.\n\nEducation:\n- Bachelor of Fine Arts, Graphic Design, XYZ University, 2019\n- Relevant coursework: Typography, Branding, Illustration\n\nExperience:\n- Graphic Designer, ABC Design Studio, 2019-2021\n- Created visual designs for various marketing materials, including logos, brochures, and websites\n- Collaborated with clients to understand design requirements and deliver high-quality solutions\n\nSkills:\n- Proficient in Adobe Creative Suite (Photoshop, Illustrator, InDesign)\n- Strong understanding of design principles and typography\n- Ability to work on multiple projects and meet deadlines\n\nProjects:\n- Designed a new brand identity for a startup, resulting in increased brand recognition\n- Created a series of illustrations for a children's book, receiving positive feedback from readers\n\nReferences available upon request."
 
