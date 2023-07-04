@@ -2,36 +2,11 @@
 
 This repository contains code for building a simple resume parser using Python and its libraries. The resume parser is trained to categorize resumes into different job categories based on the provided dataset.
 
+User can update the 'resume.text' variable in the 'predict.py' script. The script will predict the job category it belongs to.
+
+However, this model only has an accuracy evaluation of around 0.60 so it is abit better than guessing (T_T). There are many ways to improve the evaluation but we do not have time to improve or change anything so this is out submission for the project.
+
 ## Dataset
 
-The dataset used for training the resume parser consists of 2400+ resumes in both string and PDF formats. The resumes are categorized into various job categories such as HR, Designer, Information-Technology, Teacher, Advocate, Business-Development, and more.
+Train with this resume dataset on Kaggle. 66MB size file.
 Download it here: <https://www.kaggle.com/datasets/snehaanbhawal/resume-dataset>
-
-## Steps to Build and Train the Resume Parser
-
-1. Data Preprocessing: The raw resume data is preprocessed to remove unnecessary characters, symbols, and special characters. The text is also converted to lowercase.
-
-2. Label Encoding: The job categories in the dataset are encoded using label encoding to convert them into numerical values. This is necessary for training the model.
-
-3. Feature Extraction: The Bag of Words (BoW) approach is used for feature extraction. The resume text is vectorized using the CountVectorizer class from the scikit-learn library.
-
-4. Model Training: The vectorized data and encoded labels are used to train a machine learning model. In this case, a Multinomial Naive Bayes classifier is used.
-
-5. Model Evaluation: The trained model is evaluated using accuracy as the metric to measure its performance.
-
-6. Model Saving: The trained model and the vectorizer used for feature extraction are saved as joblib files for future use.
-
-## Predicting Job Category from Resume Text
-
-The trained model and vectorizer can be loaded and used to predict the job category of new resume texts. The `predict.py` script provides an example of how to use the saved model and vectorizer to make predictions.
-
-To predict the job category from a resume text, update the `resume_text` variable in the script with the desired resume text. Running the script will output the predicted job category.
-
-## Further Improvements
-
-- Explore different feature extraction techniques such as TF-IDF or word embeddings to improve the model's performance.
-- Increase the size of the training dataset to provide more diverse examples for better generalization.
-- Experiment with different machine learning models and architectures to find the best-performing model.
-- Fine-tune the hyperparameters of the chosen model to improve its accuracy.
-- Handle imbalanced data by applying techniques like oversampling or undersampling.
-- Consider adding additional features such as skills, education, or work experience for more informative predictions.
