@@ -1,4 +1,10 @@
-# Resume Parser
+# Team
+
+- Sivtheng Chang
+- Pichmonyreadh Chau
+- Vattanac Ny
+
+## Resume Parser
 
 This repository contains code for building a simple resume parser using Python and its libraries. The resume parser is trained to categorize resumes into different job categories based on the provided dataset.
 
